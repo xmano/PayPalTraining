@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="main">
+<h2>The XMLHttpRequest Object</h2>
+<button type="button" onclick="loadDoc()">Change Content</button>
+</div>
+
+<div id="demo">
+<h1>AJAX Update Demo</h1>
+</div>
+
+
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML =
+      this.responseText;
+    }
+  };
+  xhttp.open("GET", "https://raw.githubusercontent.com/xmano/JavascriptCourse/ce98081b3d3b2eaa2558c48f0155330bdd102ae8/ajax.txt", true);
+  xhttp.send();
+}
+</script>
+
+</body>
+</html>
