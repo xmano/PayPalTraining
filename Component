@@ -1,0 +1,12 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" >WebApp</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a>Weather</a></li>
+      <li><a>Currency</a></li>
+      <li><a>Movie</a></li>
+    </ul>
+  </div>
+</nav>
