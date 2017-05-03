@@ -1,3 +1,6 @@
+menu.component.html
+-------------------------
+
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -10,3 +13,19 @@
     </ul>
   </div>
 </nav>
+
+menu.component.ts
+---------------------------
+
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-menu',
+  templateUrl: './menu.component.html',
+})
+export class MenuComponent {
+  public name;
+  constructor(){
+    this.name = "Angular 2 Rocks!";
+  }  
+}
