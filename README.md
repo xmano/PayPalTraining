@@ -2,3 +2,8 @@
     crossorigin="anonymous">
 
 ng g c Menu -is --spec false --flat
+
+App components
+ng g c Weather -is --spec false
+ng g c Currency -is --spec false
+ng g c Movie -is --spec false
